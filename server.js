@@ -2,6 +2,16 @@ import express from 'express';
 import path from 'path';
 import router from './routes/router.js'
 import { fileURLToPath } from 'url';
+import cors from "cors";
+
+app.use(cors({
+  origin: [
+    "https://cleaty.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
+}));
 
 
 
