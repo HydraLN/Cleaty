@@ -1,9 +1,10 @@
 window.addEventListener("tugas", async (event) => {
   const token = localStorage.getItem("token")
   const { items } = event.detail;
+  const URL = process.env.PUBLIC_SERVER
 
   try {
-    const response = await fetch('http://localhost:8001/api/tugas', {
+    const response = await fetch(`${URL}/api/tugas`, {
       method: 'POST',
       headers: { 
         Authorization: `Bearer ${token}`,

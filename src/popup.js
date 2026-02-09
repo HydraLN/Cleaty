@@ -3,6 +3,8 @@ const tugas = document.getElementById("tugas");
 const dokumentasi = document.getElementById("dokumentasi") 
 const laporan = document.getElementById("laporan") 
 
+const URL = process.env.PUBLIC_SERVER
+
 window.addEventListener("content", () => {
   content.tugascontent = store.data
 })
@@ -202,7 +204,7 @@ const openalbumpopup = (album) => {
   console.log(key, value);
 }
     
-    const res = await fetch('http://localhost:8001/api/upload', {
+    const res = await fetch(`${URL}/api/upload`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`
@@ -357,7 +359,7 @@ document.getElementById("submittugas").addEventListener("click", () => {
 dokumentasi.addEventListener("click", async () => {
   const container = showpopup("Galeri")
   try {
-    const res = await fetch('http://localhost:8001/api/album', {
+    const res = await fetch(`${URL}/api/album`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json'
@@ -376,7 +378,7 @@ dokumentasi.addEventListener("click", async () => {
 
 laporan.addEventListener("click", async () => {
       try {
-        const res = await fetch('http://localhost:8001/api/laporan', {
+        const res = await fetch(`${URL}/api/laporan`, {
         method: "GET",
         headers: {
             'Content-Type': 'application/json'

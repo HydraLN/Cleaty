@@ -1,6 +1,8 @@
 import './input.css';
 
 document.addEventListener("DOMContentLoaded", function() {
+
+    const URL = process.env.PUBLIC_SERVER
    
 const nameinput = document.getElementById("name-input");
 const passinput = document.getElementById("pass-input");
@@ -15,7 +17,7 @@ closebtn.addEventListener("click", (e) => {
 const login = async (e) => {
     e.preventDefault();
      try {
-        const res = await fetch('http://localhost:8001/api/login', {
+        const res = await fetch(`${URL}/api/login`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

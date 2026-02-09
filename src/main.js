@@ -7,14 +7,14 @@ window.addEventListener("DOMContentLoaded", async () => {
   });
   
   const loginbtn = document.getElementById("login") || document.getElementById("logout");
-  
+  const URL = process.env.PUBLIC_SERVER
 
 
   const koordinator = async () => {
     const token = localStorage.getItem("token")
 
     try {
-      const res = await fetch('http://localhost:8001/api/auth', {
+      const res = await fetch(`${URL}/api/auth`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`
@@ -43,7 +43,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 const del = async () => {
   const token = localStorage.getItem("token")
-    const res = await fetch ("http://localhost:8001/api/logout", {
+    const res = await fetch (`${URL}/api/logout`, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${token}`
