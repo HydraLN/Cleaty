@@ -4,6 +4,8 @@ import router from './routes/router.js'
 import { fileURLToPath } from 'url';
 import cors from "cors";
 
+const app = express();
+
 app.use(cors({
   origin: [
     "https://cleaty.vercel.app"
@@ -21,8 +23,6 @@ const __dirname = path.dirname(__filename);
 //const data = path.join(__dirname, 'data', 'users.json')
 //const users = fs.readFile(data)
 
-
-const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
