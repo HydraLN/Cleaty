@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@source inline("fixed inset-0 flex items-{center, stretch} justify-center backdrop-blur-md bg-white transition");
+
+@source inline("transition{,-transform, -all}")
+@source inline("z-{0,10,20,30,40,50,auto}");
+@source inline("p-{0..12,14,16,20,24,28,32,36,40,44,48,52,56,60,64,72,80,96}");
+@source inline("rounded{-full,-sm,-md,-xl}");
+@source inline("shadow-{sm,md,lg,xl,2xl}");
+@source inline("max-w-{sm,md,lg,xl}");
+@source inline("w-{full,min,max,{1..16}}");
+@source inline("h-{full,min,max,{1..16}}");
+@source inline("text-{center,left,right,sm,md,lg}");
+@source inline("mb-{0..16}");
+@source inline("space-x-{0..100}");
+@source inline("border{,-0,-2,-4,-8}");
+@source inline("border-gray-{200,300}");
+@source inline("bg-gray-{100,200,300,400,500,600,700,800}{,/60}");
+@source inline("text-gray-{600,800}");
+@source inline("font-{bold,semibold}");
+@source inline("px-{0..10}");
+@source inline("py-{0..10}");
+@source inline("hover:bg-gray-300");
+@source inline("hover:border-gray-400");
+@source inline("group");
+@source inline("overflow-hidden");
+@source inline("active:{scale-95, shadow-inner}");
+@source inline("duration-150");
+
+@source inline("bg-blue-{100,200,300,400,500,600}")
+@source inline("origin-{left}")
+
+@source inline("transition");
+@source inline("transition-transform");
+@source inline("duration-500");
+@source inline("ease-in-out");
+@source inline("delay-50");
+
+@source inline("group-hover:scale-x-0");
+@source inline("group-hover:-translate-x-1");
+@source inline("group-hover:-translate-y-1");
+@source inline("group-hover:text-blue-600");
+
+@source inline("origin-left");
+
+@source inline("p-6");
+@source inline("mb-2");
+@source inline("text-xl");
+
+@source inline("text-blue-600");
+@source inline("text-gray-{600,700,800}");
+@source inline("text-gray-700");
+
