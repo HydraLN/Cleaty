@@ -3,7 +3,7 @@ const tugas = document.getElementById("tugas");
 const dokumentasi = document.getElementById("dokumentasi") 
 const laporan = document.getElementById("laporan") 
 
-const URL = import.meta.env.PUBLIC_SERVER
+const URL = import.meta.env.VITE_API_URL
 
 window.addEventListener("content", () => {
   content.tugascontent = store.data

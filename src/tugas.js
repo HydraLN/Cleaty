@@ -1,7 +1,7 @@
 window.addEventListener("tugas", async (event) => {
   const token = localStorage.getItem("token")
   const { items } = event.detail;
-  const URL = import.meta.env.PUBLIC_SERVER
+  const URL = import.meta.env.VITE_API_URL
 
   try {
     const response = await fetch(`${URL}/api/tugas`, {

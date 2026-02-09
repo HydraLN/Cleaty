@@ -2,7 +2,7 @@ import './input.css';
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    const URL = import.meta.env.PUBLIC_SERVER
+    const URL = import.meta.env.VITE_API_URL
    
 const nameinput = document.getElementById("name-input");
 const passinput = document.getElementById("pass-input");
