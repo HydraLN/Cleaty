@@ -21,4 +21,4 @@ app.use('/api', router)
 
 app.use(express.static(path.join(__dirname, 'dist')))
 
-app.listen(8001)
+app.listen(process.env.PORT)
