@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   });
   
   const loginbtn = document.getElementById("login") || document.getElementById("logout");
-  const URL = process.env.PUBLIC_SERVER
+  const URL = import.meta.env.PUBLIC_SERVER
 
 
   const koordinator = async () => {
